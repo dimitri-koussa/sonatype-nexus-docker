@@ -10,6 +10,7 @@ ENV NEXUS_WEBAPP_CONTEXT_PATH /nexus
 ADD start_as_nexus.sh /opt/start_as_nexus.sh
 ADD start_nexus.sh /opt/start_nexus.sh
 RUN ln -s /opt/start_nexus.sh /opt/start.sh
+RUN rm -f /tmp/nexus-latest-bundle.tar.gz
 
 CMD ["/opt/start_as_nexus.sh"]
 VOLUME /opt/sonatype-work
