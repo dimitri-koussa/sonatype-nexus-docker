@@ -6,14 +6,14 @@ Docker version of Sonatype Nexus
 Usage
 ------
 ```
-docker run -p 8081:8081 -name nexus griff/sonatype-nexus
+docker run -p 8081:8081 -name nexus dkoussa/sonatype-nexus
 ```
 And then point your browser at http://localhost:8081/nexus/
 
 Or with explicitly specified volume target:
 ```
 mkdir -p /devdata/nexus
-docker run -v /devdata/nexus:/opt/sonatype-work -p 8081:8081 -name nexus griff/sonatype-nexus
+docker run -v /devdata/nexus:/opt/sonatype-work -p 8081:8081 -name nexus dkoussa/sonatype-nexus
 ```
 
 Options / Environment variables
@@ -24,6 +24,10 @@ webapp uses when starting the server. Defaults to /nexus.
 
 An example usage with the option:
 ```
-docker run -e NEXUS_WEBAPP_CONTEXT_PATH=/ griff/sonatype-nexus
+docker run -e NEXUS_WEBAPP_CONTEXT_PATH=/ dkoussa/sonatype-nexus
 ```
 Which changes the URL to http://localhost:8081/
+
+Authors
+-------
+Based on: https://github.com/griff/sonatype-nexus-docker

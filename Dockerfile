@@ -1,5 +1,5 @@
-FROM griff/oracle-jdk7
-MAINTAINER Brian Olsen "brian@maven-group.org"
+FROM dkoussa/oracle-jdk7-docker
+MAINTAINER Dimitri Koussa "dimitri.koussa@gmail.com"
 
 RUN mkdir -p /opt/sonatype-nexus /opt/sonatype-work-template /opt/sonatype-work
 RUN wget -O /tmp/nexus-latest-bundle.tar.gz http://www.sonatype.org/downloads/nexus-2.6.4-bundle.tar.gz
