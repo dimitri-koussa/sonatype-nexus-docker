@@ -1,4 +1,4 @@
-FROM dkoussa/oracle-jdk7
+FROM dkoussa/oracle-jdk7:1.0
 MAINTAINER Dimitri Koussa "dimitri.koussa@gmail.com"
 
 RUN mkdir -p /opt/sonatype-nexus /opt/sonatype-work
