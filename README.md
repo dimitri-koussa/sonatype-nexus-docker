@@ -3,7 +3,7 @@ sonatype-nexus-docker
 
 Docker version of Sonatype Nexus.
 
-The versions of this docker container match that of Nexus itself.
+The versions Nexus used by the images of this project match the versions of the images themselves.
 
 Usage
 ------
